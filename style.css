@@ -19,24 +19,5 @@ section{
 }
 
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-header ul{
-    position: relative;
-    display: flex;
-}
-
-header ul li{
-    list-style: none;
-
-}
 
