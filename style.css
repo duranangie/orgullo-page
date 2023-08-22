@@ -166,4 +166,68 @@ header ul li a {
 
 
 
+Si deseas crear un slider sin utilizar el contenedor adicional `slider-container`, puedes hacerlo directamente con la estructura de la lista no ordenada (ul). Aquí tienes cómo hacerlo:
+
+1. Estructura HTML:
+
+```html
+<div class="slider">
+    <ul>
+        <li><img src="imagen1.jpg" alt="Imagen 1"></li>
+        <li><img src="imagen2.jpg" alt="Imagen 2"></li>
+        <!-- Agrega más elementos li con imágenes -->
+    </ul>
+</div>
+```
+
+2. Estilos CSS:
+
+```css
+.slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: relative;
+}
+
+.slider ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 300%; /* Ancho total del slider (3 imágenes) */
+    animation: slide 10s linear infinite; /* Ajusta el tiempo de animación según tus necesidades */
+}
+
+.slider li {
+    flex: 0 0 33.33%; /* 1/3 del ancho total para cada imagen */
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(-33.33%);
+    }
+    50% {
+        transform: translateX(-66.66%);
+    }
+    70% {
+        transform: translateX(-66.66%);
+    }
+    75%, 95% {
+        transform: translateX(-100%);
+    }
+}
+```
 
