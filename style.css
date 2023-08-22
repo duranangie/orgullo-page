@@ -163,3 +163,39 @@ header ul li a {
         max-width: 100%; /* Cambiamos el máximo de ancho para pantallas más pequeñas */
     }
 }
+
+
+
+
+.slider {
+    aspect-ratio: 10/16;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    display: flex;
+    overflow: hidden; /* Usamos overflow: hidden en lugar de scroll */
+}
+
+.slider{
+    position: absoluta;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%  );
+    display: flex;
+    
+}
+
+.slider li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.slider li:hover{
+    transform: translateY(-15px);
+}
+.slider li img{
+    max-width: 150px;
+}
