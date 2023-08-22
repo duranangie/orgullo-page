@@ -1,23 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100%;
+    padding: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background: #fff;
 }
 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo {
+    position: relative;
+    max-width: 80px;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.content .textBox p {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 1em;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 8px 20px;
+    background: #b3b2b2;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-left: 40%;
+    margin-right: auto;
+    color: #0f0f0f;
 
 
 
+}
+
+.slider {
+    aspect-ratio: 10/16;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    display: flex;
+    overflow: hidden; /* Usamos overflow: hidden en lugar de scroll */
+}
+
+.slider img {
+    width: 100%;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider img:not(:first-child) {
+    animation: slide 15s linear infinite; /* Aplicamos la animación a todas las imágenes excepto la primera */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        max-width: 100%; /* Cambiamos el máximo de ancho para pantallas más pequeñas */
+    }
+}
