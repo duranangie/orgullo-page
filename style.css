@@ -198,4 +198,96 @@ header ul li a {
 .slider li img{
     max-width: 150px;
 }
-f
+
+
+
+
+
+
+.slider {
+    aspect-ratio: 10/16;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    display: flex;
+    overflow: hidden; /* Usamos overflow: hidden en lugar de scroll */
+}
+
+.slider{
+    position: absoluta;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%  );
+    display: flex;
+    
+}
+
+.slider li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+Entendido, si deseas que el slider se posicione en un lado de la página y sea responsive, aquí tienes cómo puedes lograrlo:
+
+1. Asegúrate de tener una estructura HTML similar a esta:
+
+```html
+<div class="slider-container">
+    <div class="slider">
+        <ul>
+            <li><img src="imagen1.jpg" alt="Imagen 1"></li>
+            <li><img src="imagen2.jpg" alt="Imagen 2"></li>
+            <!-- Agrega más elementos li con imágenes -->
+        </ul>
+    </div>
+</div>
+```
+
+2. Utiliza CSS para posicionar el slider en un lado de la página y hacerlo responsive:
+
+```css
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%; /* Ajusta el ancho del slider según tus necesidades */
+    display: flex;
+    align-items: center;
+}
+
+.slider ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    animation: slide 10s linear infinite; /* Ajusta el tiempo de animación según tus necesidades */
+}
+
+.slider li {
+    flex: 0 0 100%;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    /* Definición de los keyframes, similar al ejemplo anterior */
+}
+```
+
+Este código CSS posiciona el slider en un lado de la página y lo hace responsive al limitar su ancho a un porcentaje del contenedor padre. Además, centra el contenedor horizontalmente para asegurarse de que el slider no esté pegado a los bordes de la página.
+
+A medida que cambies el tamaño de la ventana del navegador, el slider y sus imágenes se ajustarán proporcionalmente, manteniendo la apariencia deseada en diferentes dispositivos, incluidos los teléfonos móviles. Asegúrate de personalizar los valores de ancho, tiempo de animación y otros estilos según tus preferencias.
+
