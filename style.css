@@ -7,6 +7,8 @@
     font-family: 'Dosis', sans-serif;
 }
 
+
+
 section {
     position: relative;
     width: 100%;
@@ -22,7 +24,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;    
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
@@ -131,6 +133,7 @@ header ul li a {
 .slider img {
     max-width: 100%;
     height: auto;
+    
 }
 
 @keyframes slide {
@@ -162,3 +165,57 @@ header ul li a {
         transform: translateX(-400%);
     }
 }
+
+.fondo {
+    background: linear-gradient(rgb(255, 255, 255), rgb(87, 154, 241));
+    width: 100%;
+    height: 100%;
+    animation: slides 10s linear infinite;
+  
+}
+
+
+
+@keyframes slides {
+    0% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(229, 147, 161));
+    }
+    20% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(229, 147, 161));
+    }
+    25% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(139, 231, 219));
+    }
+    45% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(139, 231, 219));
+    }
+    50% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(245, 226, 120));
+    }
+    70% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(245, 226, 120));
+    }
+    75% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgba(114, 196, 82, 0.678));
+    }
+    95% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgba(114, 196, 82, 0.678));
+    }
+    100% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgba(114, 196, 82, 0.678));
+        }
+    }
+
+
+
+.personajes{
+    background: linear-gradient(rgb(255, 255, 255), rgb(165, 165, 165));
+    width: 100%;
+    height: 100%;
+    background-image: url(img/personajes.png);
+    background-repeat: no-repeat;
+   background-position: center bottom;
+    
+}
+
+
