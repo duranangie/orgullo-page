@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', 'Helvetica Neue',;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px ;
+    display: flex;
+    align-items:  center;
+    transition: 0.5%;
+    margin-top: 20%;
+}
+
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #221f1d;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle:before{
+background: #eff59e;
+clip-path: circle(400px at center);
+}
+
+.card img{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    transform: translate(-50%,- 50%);
+    height: 250px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 55%;
+    height: 300px;
+
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content h2{
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card .content p{
+    color: rgb(12, 10, 10);
+  
+}
+
+/*card */
+
+.card1{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px ;
+    display: flex;
+    align-items:  center;
+    transition: 0.5%;
+    margin-top: 20%;
+}
+
+.card1 .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card1 .circle::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #644d3e;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card1:hover .circle:before{
+background: #bcf8e6;
+clip-path: circle(400px at center);
+}
+
+.card1 img{
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    transform: translate(-50%,- 50%);
+    height: 250px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card1:hover img {
+    left: 72%;
+    height: 300px;
+
+}
+
+.card1 .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card1:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card1 .content h2{
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card1 .content p{
+    color: rgb(12, 10, 10);
+  
+}
+
+
+
+
+
+/*card2 */
+
+.card2{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px ;
+    display: flex;
+    align-items:  center;
+    transition: 0.5%;
+    margin-top: 20%;
+}
+
+.card2 .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card2 .circle::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b4b4b4;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card2:hover .circle:before{
+background: #f7aa52;
+clip-path: circle(400px at center);
+}
+
+.card2 img{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    transform: translate(-50%,- 50%);
+    height: 200px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card2:hover img {
+    left: 37%;
+    height: 250px;
+
+}
+
+.card2 .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card2:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card2 .content h2{
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card2 .content p{
+    color: rgb(12, 10, 10);
+  
+}
+
+
+/*card3 */
+
+.card3{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px ;
+    display: flex;
+    align-items:  center;
+    transition: 0.5%;
+    margin-top: 20%;
+}
+
+.card3 .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card3 .circle::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e9c837;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card3:hover .circle:before{
+background: #93e47e;
+clip-path: circle(400px at center);
+}
+
+.card3 img{
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    transform: translate(-50%,- 50%);
+    height: 250px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card3:hover img {
+    left: 49%;
+    height: 300px;
+
+}
+
+.card3 .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card3:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card3 .content h2{
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card3 .content p{
+    color: rgb(12, 10, 10);
+  
+}
+
+
+
+/*card4 */
+
+.card4{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px ;
+    display: flex;
+    align-items:  center;
+    transition: 0.5%;
+    margin-top: 20%;
+}
+
+.card4 .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card4 .circle::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4484e4;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card4:hover .circle:before{
+background: #f3ac8b;
+clip-path: circle(400px at center);
+}
+
+.card4 img{
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    transform: translate(-50%,- 50%);
+    height: 250px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card4:hover img {
+    left: 49%;
+    height: 300px;
+
+}
+
+.card4 .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card4:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card4 .content h2{
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card4 .content p{
+    color: rgb(12, 10, 10);
+  
+}
+
+
+/*card5 */
+
+.card5{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px ;
+    display: flex;
+    align-items:  center;
+    transition: 0.5%;
+    margin-top: 20%;
+}
+
+.card5 .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card5 .circle::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e273d9;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card5:hover .circle:before{
+background: #ec5e5e;
+clip-path: circle(400px at center);
+}
+
+.card5 img{
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    transform: translate(-50%,- 50%);
+    height: 200px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card5:hover img {
+    left: 49%;
+    height: 300px;
+
+}
+
+.card5 .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card5:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card5 .content h2{
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card5 .content p{
+    color: rgb(12, 10, 10);
+    
+  
+}
+
+
+
+
+
+@media ( max-width: 750px ) {
+
+    .card{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-top: 30%;
+       
+    }
+    .card:hover{
+        height: 500px;
+    }
+    .card .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    .card img{
+        top: 10;
+        left: 25%;
+
+        height: 200px;
+    }
+    .card:hover img{
+        top: 70%;
+        left: 10%;
+        height: 300px;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .card .content{
+    padding: 30px;
+}
+}
+
+
+@media ( max-width: 750px ) {
+
+    .card1{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-top: 30%;
+    }
+    .card1:hover{
+        height: 500px;
+    }
+    .card1 .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .card1:hover img{
+        top: 70%;
+        left: 25%;
+        height: 300px;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .card1 .content{
+    padding: 30px;
+}
+}
+
+
+
+
+@media ( max-width: 750px ) {
+
+    .card2{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-top: 30%;
+    }
+    .card2:hover{
+        height: 500px;
+    }
+    .card2 .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    
+    .card2 img{
+        top: 20;
+        left: 1%;
+        height: 186px;
+    }
+    .card2:hover img{
+        top: 70%;
+        left: 0%;
+        height: 200px;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .card2 .content{
+    padding: 30px;
+}
+}
+
+
+@media ( max-width: 750px ) {
+
+    .card3{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-top: 30%;
+    }
+    .card3:hover{
+        height: 500px;
+    }
+    .card3 .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    
+    .card3 img{
+        top: 20;
+        left: 25%;
+        height: 246px;
+    }
+    .card3:hover img{
+        top: 70%;
+        left: 20%;
+        height: 250px;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .card3 .content{
+    padding: 30px;
+}
+}
+
+
+
+
+@media ( max-width: 750px ) {
+
+    .card4{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-top: 30%;
+    }
+    .card4:hover{
+        height: 500px;
+    }
+    .card4 .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    
+    .card4 img{
+        top: 20;
+        left: 20%;
+        height: 246px;
+    }
+    .card4:hover img{
+        top: 70%;
+        left: 20%;
+        height: 250px;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .card4 .content{
+    padding: 30px;
+}
+}
+
+
+
+@media ( max-width: 750px ) {
+
+    .card5{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+        margin-top: 30%;
+    }
+    .card5:hover{
+        height: 500px;
+    }
+    .card5 .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+    
+    .card5 img{
+        top: 20;
+        left: 23%;
+        height: 200px;
+    }
+    .card5:hover img{
+        top: 70%;
+        left: 20%;
+        height: 250px;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .card5 .content{
+    padding: 30px;
+}
+}
+
+

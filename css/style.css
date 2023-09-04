@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.content .textBox p {
+    color: #0f0f0f;
+    text-align: center;
+    font-size: 1em;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 8px 20px;
+    background: #b3b2b2;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-left: 40%;
+    margin-right: auto;
+    color: #0f0f0f;
+
+
+
+}
+
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; 
+    min-width: 100px;
+    margin: 0 auto; 
+    position: relative;
+    margin-left: 10%;
+    
+}
+
+.slider ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    animation: slide 10s linear infinite;
+    
+}
+
+.slider li {
+    flex: 0 0 100%; 
+    
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    
+    
+    
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.fondo {
+    background: linear-gradient(rgb(255, 255, 255), rgb(87, 154, 241));
+    width: 100%;
+    height: 100%;
+    animation: slides 10s linear infinite;
+  
+}
+
+
+
+@keyframes slides {
+    0% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(229, 147, 161));
+    }
+    20% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(229, 147, 161));
+    }
+    25% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(139, 231, 219));
+    }
+    45% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(139, 231, 219));
+    }
+    50% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(245, 226, 120));
+    }
+    70% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(245, 226, 120));
+    }
+    75% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgba(114, 196, 82, 0.678));
+    }
+    95% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgba(114, 196, 82, 0.678));
+    }
+    100% {
+        background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgba(114, 196, 82, 0.678));
+        }
+    }
+
+
+
+.personajes{
+    background: linear-gradient(rgb(255, 255, 255), rgb(165, 165, 165));
+    width: 100%;
+    height: 100%;
+    background-image: url(img/personajes.png);
+    background-repeat: no-repeat;
+   background-position: center bottom;
+    
+}
+
+@media screen and (max-width: 769px) {
+    .slider img {
+        display: none; /* Oculta las imágenes cuando la pantalla sea igual o mayor a 168px */
+    }
+}
+
+/* Agrega una media query para pantallas menores de 168px */
+@media screen and (min-width: 768px) {
+    .slider img {
+        display: block; /* Muestra las imágenes cuando la pantalla sea menor de 168px */
+    }
+}

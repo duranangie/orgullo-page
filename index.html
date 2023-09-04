@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pride and prejurice</title>
-    <link rel="shortcut icon" href="img/loguito.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <title>pride and prejuicio</title>
+    <link rel="shortcut icon" href="img/loguito.jpg" type="image/x-icon"> <!--Logo de vista-->
+    <link rel="stylesheet" href="css/navar.css">  <!--estilo del navar-->
+    <link rel="stylesheet" href="css/style.css">  <!--estilo del navar-->
+    <link rel="stylesheet" href="css/personajes.css">  <!--estilo del navar-->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--pagina de iconos-->
 </head>
 
 <body>
+
+
     <section class="fondo">
         
-            <header>
-                <a href="#" class="logo"><img src="img/logo_principal.jpg" alt="" width="90px" height="50px"></a>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Reseña</a></li>
-                    <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="#">Escritora</a></li>
-                </ul>
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/logo_principal.jpg" height="35" alt=""></a>    
+            
+                <input type="checkbox" id="check" >
+                <label for="check" class="icons" >
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+    
+            <nav class="navbar">
+                <a href="#"style="--i:0;">inicio</a>
+                <a href="personajes.html"style="--i:1;">personaje</a>
+                <a href="reseña.html"style="--i:2;">reseña</a>
+                <a href="escritora.html"style="--i:3;">escritora</a>
+            </nav>
+        </header>
 
-            </header>
+
+
+<!--ahora vamos hacer el contenido de la pagina-->
             <div class="content">
                 <div class="textBox">
                     <h2>"El verdadero filósofo sabe sacar partido de lo que tiene"</h2>
@@ -31,29 +46,19 @@
               
                 <div class="slider">
                     <ul >
-                        <li><img src="img/librito.webp" width="500" height="500" alt=""></li>
-                        <li><img src="img/1100.webp" width="500" height="500" alt=""></li>
+                        <li><img src="img/librito.png" width="500" height="500" alt=""></li>
+                        <li><img src="img/librito2.png" width="500" height="500" alt=""></li>
                         <li><img src="img/librito3.png" width="400" height="500" alt=""></li>
                         <li><img src="img/librito4.png" width="400" height="500 " alt=""></li>
                         
                     </ul>
                 </div>
 
-          
-                   
-               
-        
-        
-           
-      
             </ul>
 
         </div>
         
     </section>
-
-  
-    
 
     
 </body>
